@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter as Font } from "next/font/google";
 import "../styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Font({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Template to Next App",
@@ -16,8 +16,10 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="pt-br">
-      <body className={cn("", inter.className)}>
+    <html lang="pt-br" suppressHydrationWarning>
+      <body
+        className={cn("bg-background min-h-screen antialiased", font.className)}
+      >
         {children}
       </body>
     </html>

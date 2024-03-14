@@ -1,6 +1,9 @@
-import { Hero } from "@/components/hero";
+import { Hero } from "@/components/elements";
 
-export default function Home() {
-  return <Hero />;
+export default function Page() {
+  return (
+    <section className="flex h-screen w-full items-center justify-center bg-black">
+      <Hero />
+    </section>
+  );
 }
-

@@ -1,2 +1,3 @@
-# Template to NextJS 13 with typescript
-> the template use TailwindCSS, TypeScript, ESlint and shadcn-ui
+# Template to NextJS with typescript
+
+> the template use Next.js, TailwindCSS, TypeScript, ESlint and shadcn-ui
