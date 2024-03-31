@@ -1,2 +1,1 @@
-export { Credits } from "./credits";
-export { Hero } from "./hero";
+// export your components here

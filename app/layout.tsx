@@ -18,7 +18,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
       <body
-        className={cn("bg-background min-h-screen antialiased", font.className)}
+        className={cn("min-h-screen bg-background antialiased", font.className)}
       >
         {children}
       </body>
