@@ -3,7 +3,14 @@ import type { Metadata } from "next";
 import { Inter as Font } from "next/font/google";
 import "../styles/globals.css";
 
-const font = Font({ subsets: ["latin"] });
+const font = Font({
+  subsets: ["latin"],
+  weight: "variable",
+  display: "swap",
+  preload: true,
+  fallback: ["sans-serif"],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
   title: "Template to Next App",
@@ -14,7 +21,7 @@ interface RootLayoutProps {
   children: React.ReactNode;
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
       <body

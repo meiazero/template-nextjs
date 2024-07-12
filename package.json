@@ -4,12 +4,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"**/*.{js,ts,tsx,md}\"",
-    "add:ui": "npx shadcn-ui add -y --overwrite"
+    "format": "prettier --write \"**/*.{ts,tsx}\"",
+    "add:ui": "pnpm dlx shadcn-ui add -y --overwrite"
   },
   "dependencies": {
     "@radix-ui/react-slot": "1.0.2",
