@@ -2,7 +2,13 @@ import { Spotlight } from "@/components/Spotlight";
 import Link from "next/link";
 import React from "react";
 
-export const dynamic = "force-static";
+/**
+ * Force the page to be static and only change with a new build.
+ *
+ * read more about the Route Segment Config here:
+ * https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
+ */
+export const dynamic = "force-static"
 
 export default function Page() {
   return (
